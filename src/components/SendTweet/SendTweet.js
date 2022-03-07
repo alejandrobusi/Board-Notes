@@ -4,6 +4,7 @@ import { Fab } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import moment from 'moment'
 import ModalContainer from '../ModalContainer';
+import FormSendTweet from '../FormSendTweet'
 
 export default function SendTweet() {
 
@@ -22,7 +23,7 @@ export default function SendTweet() {
         <AddIcon />
       </Fab>
       <ModalContainer isOpenModal={isOpenModal} closeModal={closeModal}>
-        <p>contenido modal</p>
+        <FormSendTweet />
       </ModalContainer>
     </div>
   )
